@@ -48,7 +48,7 @@ fetchCountries(inputUserText)
 function renderFlagAndName(countries) {
     const markHeader = countries.map(({flags, name})=> {
         return ` <li class="country-list-element">
-        <img class="country-list-flag" src="${flags.svg}" alt="Flag of ${name.official}" width = 30px height = 30px>
+        <img class="country-list-flag" src="${flags.svg}" alt="Flag of ${name.official}" width = 80px height = 50px>
         <p class="country-list-name">${name.official}</p>
         </li>`
     }).join("")
@@ -60,9 +60,9 @@ function renderFlagAndName(countries) {
 function renderDescriptionOfCountry(countries) {
     const markBody = countries.map(({capital, languages, population})=> {
         return `<ul class="country-info-list">
-        <li class=f"country-info-element"><span>Capital: </span>${capital} </li>
-        <li class=f"country-info-element"><span>Population: </span> ${population}</li>
-        <li class=f"country-info-element"><span>Languages: </span>${Object.values(languages).join(", ")}</li>
+        <li class="country-info-element"><span class="first-title">Capital: </span>${capital} </li>
+        <li class="country-info-element"><span class="first-title">Population: </span> ${population}</li>
+        <li class="country-info-element"><span class="first-title">Languages: </span>${Object.values(languages).join(", ")}</li>
         </ul>`
     }).join("")
     return markBody;

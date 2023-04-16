@@ -21,11 +21,19 @@ body {
 .country-list {
   list-style: none;
 }
-
+.country-list-name {
+  font-weight: 800;
+  font-size: 30px;
+  color:rgb(28, 12, 12)
+}
 .country-info-list {
   list-style: none;
 }
+.first-title {
+  font-weight: 700;
+  color: blue;
+}
 
 .country-info-element {
-  font: weight 900px;;
+  color: rgb(58, 37, 14);
 }
